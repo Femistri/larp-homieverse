@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LARP en el HomieVerse</title>
+
+  <meta
+    name="description"
+    content="LARP en el HomieVerse. Elige tu plano."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CAPA ATMOSFÉRICA -->
+  <div class="veil" aria-hidden="true">
+
+    <!-- Glifos y símbolos casi imperceptibles -->
+    <span class="glyph g1">ᚦ</span>
+    <span class="glyph g2">⟡</span>
+    <span class="glyph g3">ᛉ</span>
+    <span class="glyph g4">◌</span>
+    <span class="glyph g5">ᚨ</span>
+    <span class="glyph g6">✦</span>
+
+    <!-- Desgarres -->
+    <span class="tear tear-a"></span>
+    <span class="tear tear-b"></span>
+    <span class="tear tear-c"></span>
+
+  </div>
+
+
+  <!-- PORTADA -->
+
+  <main class="landing">
+
+    <header class="brand">
+
+      <p class="eyebrow">
+        HOMIEVERSE
+      </p>
+
+      <h1>
+        LARP
+      </h1>
+
+      <p class="subtitle">
+        EN EL HOMIEVERSE
+      </p>
+
+    </header>
+
+
+    <!-- PUERTAS -->
+
+    <nav class="doors" aria-label="Accesos principales">
+
+      <button
+        class="door"
+        data-kind="human"
+      >
+
+        <span class="door-index">
+          01
+        </span>
+
+        <span class="door-title">
+          SOY PERSONA
+        </span>
+
+        <span class="door-note">
+          Acceso al plano humano
+        </span>
+
+      </button>
+
+
+      <button
+        class="door"
+        data-kind="entity"
+      >
+
+        <span class="door-index">
+          02
+        </span>
+
+        <span class="door-title">
+          SOY ENTE
+        </span>
+
+        <span class="door-note">
+          Acceso para visitantes del Exterior
+        </span>
+
+      </button>
+
+
+      <a
+        class="door door-link"
+        href="#disclaimer"
+      >
+
+        <span class="door-index">
+          03
+        </span>
+
+        <span class="door-title">
+          DISCLAIMER
+        </span>
+
+        <span class="door-note">
+          Información, antecedentes y metajuego
+        </span>
+
+      </a>
+
+    </nav>
+
+
+    <footer>
+
+      <span>
+        HOMIEVERSE // LARP
+      </span>
+
+      <span>
+        EL VELO PERMANECE ABIERTO
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <!-- DISCLAIMER / METAJUEGO -->
+
+  <section
+    id="disclaimer"
+    class="meta-panel"
+    aria-label="Información del LARP"
+  >
+
+    <button
+      class="close-meta"
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+
+    <div class="meta-inner">
+
+      <p class="eyebrow">
+        DISCLAIMER / METAJUEGO
+      </p>
+
+      <h2>
+        Antes de entrar<br>
+        al juego.
+      </h2>
+
+
+      <div class="meta-grid">
+
+        <article>
+
+          <h3>
+            ¿QUÉ ES?
+          </h3>
+
+          <p>
+            Aquí irá la explicación general del LARP,
+            su contexto y cómo participar.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <h3>
+            ARCHIVO
+          </h3>
+
+          <p>
+            Antecedentes, fotografías y registros
+            de LARPs anteriores.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <h3>
+            PRÓXIMAS FECHAS
+          </h3>
+
+          <p>
+            Fechas, horarios, sedes, cooperación
+            y toda la información práctica.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <h3>
+            METAJUEGO
+          </h3>
+
+          <p>
+            Todo aquello que necesitas saber fuera
+            de la ficción para jugar.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- POP UP DE IDENTIDAD -->
+
+  <div
+    class="modal"
+    id="identityModal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <div class="modal-box">
+
+      <p class="warning-mark">
+        ⚠
+      </p>
+
+      <p class="eyebrow">
+        ACCESS WARNING
+      </p>
+
+      <h2 id="modalTitle">
+        Verificación de identidad
+      </h2>
+
+      <p id="modalText">
+      </p>
+
+
+      <label class="confirm">
+
+        <input
+          type="checkbox"
+          id="identityCheck"
+        >
+
+        <span id="checkText">
+        </span>
+
+      </label>
+
+
+      <button
+        class="continue"
+        id="continueBtn"
+        disabled
+      >
+        CONTINUAR
+      </button>
+
+
+      <button
+        class="cancel"
+        id="cancelBtn"
+      >
+        CANCELAR
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,945 @@
+:root {
+
+  --paper: #11110f;
+  --ink: #e7e4da;
+  --muted: #929087;
+
+  --line: rgba(231, 228, 218, 0.18);
+
+  --ghost: rgba(231, 228, 218, 0.055);
+
+  --accent: #b9b3a4;
+
+}
+
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+
+  margin: 0;
+
+  background: var(--paper);
+
+  color: var(--ink);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+}
+
+
+button,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+/* ---------------------------------
+   CAPA ATMOSFÉRICA
+--------------------------------- */
+
+.veil {
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  z-index: 0;
+
+}
+
+
+/* GLIFOS */
+
+.glyph {
+
+  position: absolute;
+
+  color:
+    rgba(
+      231,
+      228,
+      218,
+      0.045
+    );
+
+  font-family: serif;
+
+  font-size:
+    clamp(
+      30px,
+      5vw,
+      75px
+    );
+
+  font-weight: 400;
+
+}
+
+
+.g1 {
+  top: 9%;
+  left: 8%;
+}
+
+.g2 {
+  top: 18%;
+  right: 11%;
+}
+
+.g3 {
+  bottom: 17%;
+  left: 14%;
+}
+
+.g4 {
+  bottom: 8%;
+  right: 18%;
+}
+
+.g5 {
+  top: 55%;
+  right: 6%;
+}
+
+.g6 {
+  top: 37%;
+  left: 5%;
+}
+
+
+/* DESGARRES */
+
+.tear {
+
+  position: absolute;
+
+  display: block;
+
+  opacity: 0.09;
+
+  filter: blur(0.2px);
+
+}
+
+
+.tear-a {
+
+  width: 42vw;
+
+  height: 1px;
+
+  top: 29%;
+
+  left: -4%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #ddd8ca 35%,
+      transparent 80%
+    );
+
+  transform:
+    rotate(-7deg);
+
+}
+
+
+.tear-b {
+
+  width: 32vw;
+
+  height: 1px;
+
+  bottom: 27%;
+
+  right: -3%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #ddd8ca 20%,
+      transparent 90%
+    );
+
+  transform:
+    rotate(11deg);
+
+}
+
+
+.tear-c {
+
+  width: 20vw;
+
+  height: 1px;
+
+  top: 64%;
+
+  left: 39%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #ddd8ca,
+      transparent
+    );
+
+  transform:
+    rotate(-21deg);
+
+  opacity: 0.045;
+
+}
+
+
+/* ---------------------------------
+   PORTADA
+--------------------------------- */
+
+.landing {
+
+  position: relative;
+
+  z-index: 1;
+
+  min-height: 100vh;
+
+  max-width: 920px;
+
+  margin: auto;
+
+  padding:
+    12vh
+    7vw
+    5vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.brand {
+
+  text-align: center;
+
+  margin-bottom: 12vh;
+
+}
+
+
+.eyebrow {
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.32em;
+
+  color: var(--muted);
+
+  margin:
+    0
+    0
+    18px;
+
+  text-transform: uppercase;
+
+}
+
+
+h1 {
+
+  font-size:
+    clamp(
+      64px,
+      15vw,
+      150px
+    );
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  line-height: 0.8;
+
+  margin:
+    0
+    0
+    20px;
+
+}
+
+
+.subtitle {
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size:
+    clamp(
+      11px,
+      1.6vw,
+      15px
+    );
+
+  letter-spacing: 0.45em;
+
+  margin: 0;
+
+  color: var(--muted);
+
+}
+
+
+/* ---------------------------------
+   PUERTAS
+--------------------------------- */
+
+.doors {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 1px;
+
+  background: var(--line);
+
+  border: 1px solid var(--line);
+
+}
+
+
+.door {
+
+  position: relative;
+
+  min-height: 170px;
+
+  padding: 34px 28px;
+
+  text-align: left;
+
+  background:
+    rgba(
+      17,
+      17,
+      15,
+      0.96
+    );
+
+  border: 0;
+
+  transition:
+    background 0.25s,
+    transform 0.25s;
+
+}
+
+
+.door:hover {
+
+  background: #191916;
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+.door:nth-child(3) {
+
+  grid-column: 1 / -1;
+
+  min-height: 110px;
+
+}
+
+
+.door-index {
+
+  display: block;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  color: var(--muted);
+
+  letter-spacing: 0.2em;
+
+  margin-bottom: 34px;
+
+}
+
+
+.door-title {
+
+  display: block;
+
+  font-size:
+    clamp(
+      22px,
+      3vw,
+      34px
+    );
+
+  letter-spacing: 0.08em;
+
+}
+
+
+.door-note {
+
+  display: block;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  letter-spacing: 0.12em;
+
+  margin-top: 12px;
+
+  text-transform: uppercase;
+
+}
+
+
+.door-link {
+
+  text-decoration: none;
+
+}
+
+
+/* ---------------------------------
+   FOOTER
+--------------------------------- */
+
+footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding-top: 8vh;
+
+  font:
+    9px
+    Arial,
+    sans-serif;
+
+  letter-spacing: 0.2em;
+
+  color: #68675f;
+
+}
+
+
+/* ---------------------------------
+   POPUP
+--------------------------------- */
+
+.modal {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 20;
+
+  background:
+    rgba(
+      5,
+      5,
+      4,
+      0.82
+    );
+
+  backdrop-filter:
+    blur(7px);
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 24px;
+
+}
+
+
+.modal.open {
+
+  display: flex;
+
+}
+
+
+.modal-box {
+
+  width:
+    min(
+      480px,
+      100%
+    );
+
+  border:
+    1px
+    solid
+    var(--line);
+
+  background: #121210;
+
+  padding:
+    46px
+    38px;
+
+  text-align: center;
+
+  box-shadow:
+    0 25px
+    80px
+    rgba(
+      0,
+      0,
+      0,
+      0.5
+    );
+
+}
+
+
+.warning-mark {
+
+  font-family: Arial, sans-serif;
+
+  font-size: 24px;
+
+  margin:
+    0
+    0
+    25px;
+
+  color: var(--accent);
+
+}
+
+
+.modal h2 {
+
+  font-size: 29px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.04em;
+
+  margin:
+    0
+    0
+    20px;
+
+}
+
+
+.modal p:not(.eyebrow):not(.warning-mark) {
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #bbb8ae;
+
+}
+
+
+.confirm {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin:
+    30px
+    0;
+
+  font:
+    12px
+    Arial,
+    sans-serif;
+
+  letter-spacing: 0.05em;
+
+}
+
+
+.confirm input {
+
+  appearance: none;
+
+  width: 16px;
+
+  height: 16px;
+
+  border:
+    1px
+    solid
+    #77736a;
+
+  background: transparent;
+
+  cursor: pointer;
+
+}
+
+
+.confirm input:checked {
+
+  background: #d8d3c5;
+
+  box-shadow:
+    inset
+    0 0 0 4px
+    #121210;
+
+}
+
+
+.continue,
+.cancel {
+
+  width: 100%;
+
+  padding: 14px;
+
+  background: transparent;
+
+  border:
+    1px
+    solid
+    var(--line);
+
+  letter-spacing: 0.18em;
+
+  font:
+    10px
+    Arial,
+    sans-serif;
+
+}
+
+
+.continue:not(:disabled):hover {
+
+  background: #e7e4da;
+
+  color: #11110f;
+
+}
+
+
+.continue:disabled {
+
+  opacity: 0.25;
+
+  cursor: not-allowed;
+
+}
+
+
+.cancel {
+
+  border: 0;
+
+  margin-top: 12px;
+
+  color: #77746c;
+
+}
+
+
+/* ---------------------------------
+   DISCLAIMER
+--------------------------------- */
+
+.meta-panel {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 10;
+
+  background: #121210;
+
+  transform:
+    translateY(100%);
+
+  transition:
+    transform 0.5s ease;
+
+  overflow: auto;
+
+}
+
+
+.meta-panel.open {
+
+  transform:
+    translateY(0);
+
+}
+
+
+.meta-inner {
+
+  max-width: 920px;
+
+  margin: auto;
+
+  padding:
+    12vh
+    7vw
+    10vh;
+
+}
+
+
+.meta-panel h2 {
+
+  font-size:
+    clamp(
+      42px,
+      8vw,
+      82px
+    );
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  margin:
+    0
+    0
+    9vh;
+
+}
+
+
+.meta-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 1px;
+
+  background: var(--line);
+
+  border:
+    1px
+    solid
+    var(--line);
+
+}
+
+
+.meta-grid article {
+
+  padding: 30px;
+
+  background: #121210;
+
+  min-height: 180px;
+
+}
+
+
+.meta-grid h3 {
+
+  font:
+    10px
+    Arial,
+    sans-serif;
+
+  letter-spacing: 0.22em;
+
+  margin:
+    0
+    0
+    25px;
+
+}
+
+
+.meta-grid p {
+
+  color: #aaa79e;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  max-width: 360px;
+
+}
+
+
+.close-meta {
+
+  position: fixed;
+
+  top: 28px;
+
+  right: 32px;
+
+  background: none;
+
+  border: 0;
+
+  font-size: 34px;
+
+  font-weight: 200;
+
+  color: #aaa;
+
+  z-index: 2;
+
+}
+
+
+/* ---------------------------------
+   MÓVIL
+--------------------------------- */
+
+@media (max-width: 650px) {
+
+  .landing {
+
+    padding-top: 9vh;
+
+  }
+
+
+  .brand {
+
+    margin-bottom: 9vh;
+
+  }
+
+
+  .doors {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .door:nth-child(3) {
+
+    grid-column: auto;
+
+  }
+
+
+  .door {
+
+    min-height: 145px;
+
+  }
+
+
+  .door-index {
+
+    margin-bottom: 25px;
+
+  }
+
+
+  footer {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+
+  .meta-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .meta-inner {
+
+    padding-top: 12vh;
+
+  }
+
+
+  .modal-box {
+
+    padding:
+      38px
+      25px;
+
+  }
+
+}

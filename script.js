@@ -58,10 +58,10 @@ const destinations = {
       "Este espacio contiene material de inducción destinado a entidades que realizan su primera incursión en el plano Tierra. Si eres una persona, no deberías estar aquí.",
 
     check:
-      "I'm not an ALIEN",
+  "I'm not an ALIEN",
 
-    url:
-      "#"
+url:
+  "ente.html"
 
   }
 

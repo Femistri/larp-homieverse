@@ -171,7 +171,7 @@ continueBtn.addEventListener(
     ) {
 
       alert(
-        "Acceso confirmado. Pronto estará el canal correspondiente."
+        "ACCESO DENEGADO. No mienta sobre su origen, vívalo con orgullo."
       );
 
     }

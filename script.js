@@ -26,8 +26,8 @@ const modalTitle =
 
 
 /*
-  AQUÍ CAMBIAREMOS POSTERIORMENTE
-  LOS LINKS DE LOS DOS CANALES.
+  AQUÍ ESTARAN PRONTO
+  LOS LINKS DE LOS CANALES.
 */
 
 const destinations = {
@@ -58,7 +58,7 @@ const destinations = {
       "Este espacio contiene material de inducción destinado a entidades que realizan su primera incursión en el plano Tierra. Si eres una persona, no deberías estar aquí.",
 
     check:
-      "I'm not an esovisitor",
+      "I'm not an ALIEN",
 
     url:
       "#"
@@ -171,7 +171,7 @@ continueBtn.addEventListener(
     ) {
 
       alert(
-        "Acceso confirmado. Aquí irá el canal correspondiente."
+        "Acceso confirmado. Pronto estará el canal correspondiente."
       );
 
     }

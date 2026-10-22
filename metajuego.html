@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Metajuego | LARP en el HomieVerse</title>
-  <meta name="description" content="Prefacio e información del LARP en el HomieVerse, 24 de octubre.">
+  <meta
+    name="description"
+    content="Prefacio, hoja de personaje, pacto ficcional y programación del LARP en el HomieVerse."
+  >
 
   <style>
     * {
@@ -61,6 +65,48 @@
       margin: 0 0 22px;
     }
 
+    .documents {
+      margin-top: 54px;
+    }
+
+    .documents h2 {
+      color: #e7e4da;
+      font-size: 22px;
+      line-height: 1.35;
+      text-align: center;
+      margin: 0 0 12px;
+    }
+
+    .documents-intro {
+      color: #aaa79e;
+      text-align: center;
+      margin: 0 auto 30px;
+      max-width: 650px;
+    }
+
+    .document {
+      margin: 0 0 42px;
+      padding: 20px;
+      border: 1px solid #393833;
+      background: #111110;
+    }
+
+    .document h3 {
+      color: #e7e4da;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 0 0 18px;
+    }
+
+    .document img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
     .hashtags {
       display: flex;
       flex-wrap: wrap;
@@ -81,18 +127,37 @@
     .back {
       display: block;
       width: fit-content;
-      margin: 42px auto 0;
+      max-width: 100%;
+      margin: 34px auto 0;
       padding: 12px 20px;
       border: 1px solid #aaa79e;
       color: #e7e4da;
       text-decoration: none;
       font-size: 12px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 1.7;
+      text-align: center;
     }
 
     .back:hover {
       background: #e7e4da;
       color: #090909;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        width: calc(100% - 24px);
+        padding-top: 24px;
+      }
+
+      .document {
+        padding: 10px;
+        margin-bottom: 28px;
+      }
+
+      .copy {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
@@ -101,6 +166,7 @@
   <main>
     <p class="eyebrow">HOMIEVERSE // L.A.R.P. 2026</p>
 
+    <!-- PREFACIO -->
     <img
       class="prefacio"
       src="./Prefacio%2000.webp"
@@ -109,6 +175,7 @@
       decoding="async"
     >
 
+    <!-- DESCRIPCIÓN DEL EVENTO -->
     <article class="copy">
       <h1>LARP en el HomieVerse, 24 de octubre</h1>
 
@@ -140,27 +207,85 @@
       </p>
     </article>
 
-    <nav class="hashtags" aria-label="Etiquetas del evento">
-      <a href="https://www.facebook.com/hashtag/larp" target="_blank" rel="noopener">#LARP</a>
-      <a href="https://www.facebook.com/hashtag/homieverse" target="_blank" rel="noopener">#HomieVerse</a>
-      <a href="https://www.facebook.com/hashtag/juegosderol" target="_blank" rel="noopener">#JuegosDeRol</a>
-      <a href="https://www.facebook.com/hashtag/juegosdeterror" target="_blank" rel="noopener">#JuegosDeTerror</a>
-      <a href="https://www.facebook.com/hashtag/esoterrorists" target="_blank" rel="noopener">#Esoterrorists</a>
-    </nav>
-    
+    <!-- DOCUMENTOS E INFORMACIÓN DEL METAJUEGO -->
+    <section class="documents">
+      <h2>DOCUMENTOS DE ORIENTACIÓN</h2>
 
+      <p class="documents-intro">
+        Información para preparar tu participación en el LARP del HomieVerse.
+        Consulta estos materiales antes de cruzar la Membrana.
+      </p>
+
+      <!-- HOJA DE PERSONAJE -->
+      <article class="document">
+        <h3>HOJA DE PERSONAJE LARP</h3>
+        <img
+          src="./Hoja%20de%20personaje%20LARP.webp"
+          alt="Hoja de personaje del LARP"
+          loading="lazy"
+          decoding="async"
+        >
+      </article>
+
+      <!-- PACTO FICCIONAL -->
+      <article class="document">
+        <h3>PACTO FICCIONAL</h3>
+        <img
+          src="./Pacto%20Ficcional.webp"
+          alt="Pacto ficcional del LARP"
+          loading="lazy"
+          decoding="async"
+        >
+      </article>
+
+      <!-- PROGRAMACIÓN -->
+      <article class="document">
+        <h3>PROGRAMACIÓN NOD HUN OTH</h3>
+        <img
+          src="./Programacion%20NodHunOth.webp"
+          alt="Programación de Nod Hun Oth TV"
+          loading="lazy"
+          decoding="async"
+        >
+      </article>
+    </section>
+
+    <!-- HASHTAGS -->
+    <nav class="hashtags" aria-label="Etiquetas del evento">
+      <a href="https://www.facebook.com/hashtag/larp"
+         target="_blank" rel="noopener">#LARP</a>
+
+      <a href="https://www.facebook.com/hashtag/homieverse"
+         target="_blank" rel="noopener">#HomieVerse</a>
+
+      <a href="https://www.facebook.com/hashtag/juegosderol"
+         target="_blank" rel="noopener">#JuegosDeRol</a>
+
+      <a href="https://www.facebook.com/hashtag/juegosdeterror"
+         target="_blank" rel="noopener">#JuegosDeTerror</a>
+
+      <a href="https://www.facebook.com/hashtag/esoterrorists"
+         target="_blank" rel="noopener">#Esoterrorists</a>
+    </nav>
+
+    <!-- ENLACE A NOD HUN OTH TV -->
     <a
       class="back"
       href="ente.html"
-      style="margin-top: 34px; text-align: center; line-height: 1.7;"
     >
-      Conéctate al canal de comunicación de La Agencia de Reinserción Paulatina (L.A.R.P.)
+      Conéctate al canal de comunicación de La Agencia de Reinserción
+      Paulatina (L.A.R.P.)
       <br>
       <strong>Nod Hun Oth TV™</strong>
     </a>
 
-    
-    <a class="back" href="index.html#disclaimer">VOLVER A METAJUEGO</a>
+    <!-- REGRESAR AL PANEL DE METAJUEGO -->
+    <a
+      class="back"
+      href="index.html#disclaimer"
+    >
+      VOLVER A METAJUEGO
+    </a>
   </main>
 </body>
 </html>
